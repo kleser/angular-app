@@ -1,25 +1,45 @@
-<h2>Supaaaa</h2>
+<div *ngIf="!firstDone">
+    <h2>Supaaaa</h2>
 
-<p>Das isch ize nid e so schwirig gsi he ;)</p>
-<br>
-<p>Wemer scho hie si womer üs zum erschte richtige Date troffe hei (mit Znacht)
-    de hani fougendi Frage ah di:</p>
+    <p>Das isch ize nid e so schwirig gsi he ;)</p>
+    <br>
+    <p>Wemer scho hie si womer üs zum erschte richtige Date troffe hei (mit Znacht)
+        de hani fougendi Frage ah di:</p>
 
-<br>
-<p>Was simer denn fürne pace grennt?</p>
-<mat-form-field>
-    <input matInput placeholder="Pace" (input)="checkPace($event)"/>
-</mat-form-field>
+    <br>
+    <p>Was simer denn fürne pace grennt?</p>
+    <mat-form-field>
+        <input matInput placeholder="Pace" (input)="checkPace($event)"/>
+    </mat-form-field>
 
-<p>Wi wiit isches gsi?</p>
-<mat-form-field>
-    <input matInput (input)="checkKm($event)" type="number"/>
-</mat-form-field>
+    <p>Wi wiit isches gsi?</p>
+    <mat-form-field>
+        <input matInput (input)="checkKm($event)" type="number"/>
+    </mat-form-field>
 
-<p>Isch schön Wätter gsi?</p>
-<mat-slide-toggle [(ngModel)]="isChecked"></mat-slide-toggle>
+    <p>Isch schön Wätter gsi?</p>
+    <mat-slide-toggle [(ngModel)]="isChecked"></mat-slide-toggle>
 
-<br>
+    <br>
 
-<button mat-stroked-button (click)="control()">Kontroue</button>
-<h3 *ngIf="falseTry">Dues nomau kontrolliere schatzi</h3>
+    <button mat-stroked-button (click)="control()">Kontroue</button>
+    <h3 *ngIf="falseTry">Dues nomau kontrolliere schatzi</h3>
+
+
+</div>
+<div *ngIf="firstDone">
+    <h3>Gut gemacht mausi</h3>
+    <p>Isch ganz schön gsi denn, scho nume di Umarmig bim Hallo sägä. U ner ds Ässä und am schönschte
+        natürlich di längi Umarmig vor dr Wäuä. Ahh du hesch mi verzouberet!</p>
+    <br>
+    <p>So ize muesch dis Chöpfli bruche ;)</p>
+    <p>Fing use, was im Rätsu gsuecht isch, ner zeu die uf dr Ost site und gib se ih.</p>
+    <br>
+    <p>Ich stehe still und doch lebendig,</p>
+    <p>Atme Luft, doch spreche nicht.</p>
+    <p>Im Sommer grün, im Winter kahl,</p>
+    <p>Bin oft im Wald, doch manchmal im Tal.</p>
+    <mat-form-field>
+        <input matInput placeholder="Ahzau" (input)="secondControl($event)"/>
+    </mat-form-field>
+</div>
