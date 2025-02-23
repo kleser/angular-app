@@ -1,0 +1,14 @@
+.gridi {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Zwei Spalten mit gleicher Breite */
+    gap: 30px; /* Abstand zwischen den Elementen */
+}
+
+.correct {
+    border: 2px solid green;
+}
+
+.incorrect {
+    border: 2px solid red;
+}
+

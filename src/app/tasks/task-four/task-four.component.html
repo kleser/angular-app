@@ -1,0 +1,37 @@
+<div *ngIf="!isStreet">
+    <h2>Niceeeeee</h2>
+    <p>So, füre nächscht Hiiwis bruchsch z Mäppli mit de Stückli</p>
+
+    <button mat-stroked-button (click)="changeContentOne()">I bi da</button>
+</div>
+
+<div *ngIf="!isThere && isStreet">
+    <h2>Toll, weisch no was da gsi isch?</h2>
+    <p>Nach dem schöne Abe am Donschti heimer ganz viu Vorfröid gha, üs hie ono churz z gseh. </p>
+    <p> Du bisch äxtra no ufe cho zu mir. U womer ner fertig hei agfüüret simer da Arm in Arm,
+        üsi Chöpf anenang drückt zrüg gloffe. Mit richtig viu Gfüu i üs dinne... huch.</p>
+
+    <br>
+    <p>Nume dank dir hani sone Zit möge renne ;) U de weisch mini Zit no?</p>
+
+    <button mat-stroked-button (click)="changeContentTwo()">Ready für z nächste</button>
+</div>
+
+<div *ngIf="isThere && !isLight">
+    <h3>So u de, schaffsches i 30 Sekunde di richtig Ahzau Ample (nume die mit 3 Liechter) ah dere Chrützig z zeue?</h3>
+    <p>D Zit wird de vo mir gstoppt.</p>
+    <mat-form-field>
+        <input matInput (input)="checkLights($event)" type="number" placeholder="Amplene">
+    </mat-form-field>
+    <br>
+    <button mat-stroked-button style="margin-top: 30px" (click)="checkLight()">Ig has</button>
+    <p *ngIf="inCorrect">Schatzi muesch besser luege ;)</p>
+</div>
+
+<div *ngIf="isLight && !orderGame">
+    <p>So ize geits witer ah fougende Ort:</p>
+
+    <h4>46°57'05.3"N 7°27'35.6"E</h4>
+
+    <button mat-stroked-button (click)="changeContentThree()">Bin da</button>
+</div>

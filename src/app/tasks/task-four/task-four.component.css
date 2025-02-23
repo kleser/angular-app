@@ -1,0 +1,5 @@
+.text-element {
+    max-width: 60%;
+    justify-content: center; /* Zentriert horizontal */
+    align-items: center;
+}

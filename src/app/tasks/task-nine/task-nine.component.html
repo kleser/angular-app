@@ -1,0 +1,29 @@
+<div *ngIf="!thirdDone">
+    <p>Supaa schatzi</p>
+    <p>Für z nächschtä Rätsu muesch di chli go umeluege. Irgendwo hie im Umkreis vo 20 Meter fingsch use,
+        das e Person zwöi "Boute" het zämägfüuert. Wenn isch das gsi und wi het si gheisse?</p>
+    <br>
+    <mat-form-field>
+        <div class="gridi">
+            <div>
+                <input [ngClass]="isYearCorrectBoolean ? 'correct' : 'incorrect'" (input)="updateYear()"
+                       [(ngModel)]="inputYear" type="number">
+            </div>
+            <div>
+                <input [ngClass]="isNameCorrectBoolean ? 'correct' : 'incorrect'" (input)="updateName()"
+                       [(ngModel)]="inputName" type="text">
+            </div>
+        </div>
+
+    </mat-form-field>
+    <br>
+    <button mat-stroked-button style="margin-top: 20px" (click)="changeThird()">Kontrolliere</button>
+</div>
+
+<div *ngIf="thirdDone">
+    <p>Top</p>
+    <p>Ize nimmsch di vorher 132, räschnisch no 114 derzue. Ner nimmsch
+        dr erscht Buechstabe vom Vorname vo dem Maa vo vorher und füegsch no es W derzue. Ner 200 ab die Post</p>
+    <br>
+    <button mat-stroked-button (click)="finish()">Fertig</button>
+</div>

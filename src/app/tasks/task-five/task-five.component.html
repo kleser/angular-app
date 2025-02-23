@@ -1,0 +1,32 @@
+<div *ngIf="!end" class="top">
+    <h2>Welcome back ;)</h2>
+    <p>Am beschte nimmschdr hurti 2 - 3 Minute und gniessisch dr Moment hie.
+        Denksch zrüg ah üses Date hie... </p>
+    <br>
+    <p>Chlises spili gfällig? </p>
+    <p>Due doch mau üsi Dates ir Reihefoug ordne ;)</p>
+
+    <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+        <div *ngFor="let date of dates">
+            <div class="example-box" cdkDrag>
+                <div class="example-custom-placeholder" *cdkDragPlaceholder></div>
+                {{ date }}
+            </div>
+        </div>
+    </div>
+
+    <p class="not-correct" *ngIf="falseGuess">Leider nid ganz</p>
+
+    <button mat-stroked-button (click)="changeGame()">Check</button>
+    <div style="height: 40px;"></div>
+
+    <div *ngIf="showImage" class="overlay">
+        <img src="assets/119956.png" alt="Bildbeschreibung"/>
+    </div>
+</div>
+
+<div *ngIf="end">
+    <p>Irgendöpis us dr Hiufechischte hiuftner ize wiiter für ah nechscht Ort.</p>
+
+    <button mat-stroked-button (click)="redirect()">I weis wo härä</button>
+</div>

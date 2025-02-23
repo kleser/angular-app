@@ -1,0 +1,38 @@
+<div class="background">
+    <div class="child">
+        <p>Mini liebi Nina</p>
+        <p>Ready for an adventure?</p>
+        <p>I weis doch, dasde gärn mau wider e Schnitzujagd wetisch mache und de hani denkt, möchti mim schätzli
+            de Wunsch doch erfüue ;) De chani o grad mau für einisch mi Bruef mit em Privatläbä verbinde, hihi.</p>
+        <br>
+        <p>Du chunsch ize verschidnigi Ufgabe gsteut über, teuwis isch d Lösig es Wort, e Zau, es Datum oder aber o Di
+            Standort wode di befindisch.
+            Zum d Lösig z finge muesch mengisch ane Ort härä, amne Ort öpis sueche oder aber o säuber druf cho.
+            Öbs überlege, google oder lüt frage isch, isch dir überlah. </p>
+        <br>
+        <p>I begleite di natürlich zum luege das aues klappt. Wennde komplett ufem Houzwäg bisch oder i di fauschi
+            richtig loufsch, de würdi de iigriffe :))</p>
+        <br>
+        <p>Machs guet, viu erfoug babe.</p>
+        <br>
+        <br>
+        <p>Füre Start bruchsch e 6 oder 8 Ziffere längi Nummere, wo mit üs z tüe het ;)</p>
+
+        <form [formGroup]="pageForm">
+
+            <mat-form-field>
+                <input formControlName="password" matInput placeholder="Passwort" required/>
+            </mat-form-field>
+            <br>
+            <button mat-stroked-button (click)="checkPassword()">Prüefe</button>
+
+        </form>
+
+        <p *ngIf="wrongTry">{{ wrongString }}</p>
+    </div>
+
+    <div class="child">
+        <img src="assets/ezgif-2-182315565b.jpg" alt="detective" height="560" width="560">
+    </div>
+
+</div>

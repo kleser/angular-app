@@ -1,0 +1,99 @@
+<h2>Erschti Ufgab</h2>
+
+<p>Hie hesch paar Frage, probier die doch mau z löse ;)</p>
+<br>
+<br>
+
+<div class="myFlex">
+    <div>
+        <p>Dr Kanton womer üse erscht ganz Namittag z zwöit hei verbracht</p>
+        <div class="flexi">
+            <mat-form-field>
+                <input matInput placeholder="Was denksch?" (input)="isCorrect($event, 0)"/>
+            </mat-form-field>
+            <img *ngIf="correctArray[0]" src="assets/Eo_circle_green_checkmark.svg.png" alt="checkmark" height="60"
+                 width="60">
+        </div>
+    </div>
+
+    <div>
+        <p>Name vom Wettkampf womer zämä gmacht hei, womer öpe 3 Züg speter gno hei wüumer no hei wöue knuddle</p>
+        <div class="flexi">
+            <mat-form-field>
+                <input matInput placeholder="Was denksch?" (input)="isCorrect($event, 1)"/>
+            </mat-form-field>
+            <img *ngIf="correctArray[1]" src="assets/Eo_circle_green_checkmark.svg.png" alt="checkmark" height="60"
+                 width="60">
+        </div>
+    </div>
+
+    <div>
+        <p>Dr Name vo mire grosse Liebi</p>
+        <div class="flexi">
+            <mat-form-field>
+                <input matInput placeholder="Was denksch?" (input)="isCorrect($event, 2)"/>
+            </mat-form-field>
+            <img *ngIf="correctArray[2]" src="assets/Eo_circle_green_checkmark.svg.png" alt="checkmark" height="60"
+                 width="60">
+        </div>
+    </div>
+
+    <div>
+        <p>Dr Name wo du hoffentlich mau wirsch ha ;)</p>
+        <div class="flexi">
+            <mat-form-field>
+                <input matInput placeholder="Was denksch?" (input)="isCorrect($event, 3)"/>
+            </mat-form-field>
+            <img *ngIf="correctArray[3]" src="assets/Eo_circle_green_checkmark.svg.png" alt="checkmark" height="60"
+                 width="60">
+        </div>
+    </div>
+
+    <div>
+        <p>Mir zwöi si es guets ____ (nid team)</p>
+        <div class="flexi">
+            <mat-form-field>
+                <input matInput placeholder="Was denksch?" (input)="isCorrect($event, 4)"/>
+            </mat-form-field>
+            <img *ngIf="correctArray[4]" src="assets/Eo_circle_green_checkmark.svg.png" alt="checkmark" height="60"
+                 width="60">
+        </div>
+    </div>
+
+    <div>
+        <p>Eis Museum wo mer beidi i gueter Erinnerig wärdä ha</p>
+        <div class="flexi">
+            <mat-form-field>
+                <input matInput placeholder="Was denksch?" (input)="isCorrect($event, 5)"/>
+            </mat-form-field>
+            <img *ngIf="correctArray[5]" src="assets/Eo_circle_green_checkmark.svg.png" alt="checkmark" height="60"
+                 width="60">
+        </div>
+    </div>
+
+    <div>
+        <p>Ort womer z erschte mau üs ide Arme ghebt hei und uf d Stadt gluegt hei</p>
+        <div class="flexi">
+            <mat-form-field>
+                <input matInput placeholder="Was denksch?" (input)="isCorrect($event, 6)"/>
+            </mat-form-field>
+            <img *ngIf="correctArray[6]" src="assets/Eo_circle_green_checkmark.svg.png" alt="checkmark" height="60"
+                 width="60">
+        </div>
+    </div>
+
+    <div>
+        <p>Spitzname vo mim du weisch scho was ;)</p>
+        <div class="flexi">
+            <mat-form-field>
+                <input matInput placeholder="Was denksch?" (input)="isCorrect($event, 7)"/>
+            </mat-form-field>
+            <img *ngIf="correctArray[7]" src="assets/Eo_circle_green_checkmark.svg.png" alt="checkmark" height="60"
+                 width="60">
+        </div>
+    </div>
+</div>
+
+<br>
+
+<button mat-stroked-button *ngIf="allCorrect" (click)="navigateForward()">Weiter gehts</button>

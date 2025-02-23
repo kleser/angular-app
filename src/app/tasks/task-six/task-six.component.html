@@ -1,0 +1,26 @@
+<h2>Muuuuuu</h2>
+<p>Nei es bärli macht nid e so</p>
+<br>
+<p>ZZZZZZZZZzzzzzzzzzzz</p>
+<p>Es bruunbärli duet viu Schlaaafe. Was denksch, wi viu Mönet macht er Winterschlaf?</p>
+
+<button mat-stroked-button (click)="changeKnow()">I wots wüsse</button>
+
+<br>
+<p *ngIf="wantToKnow">Braunbären könnten in nördlichen Regionen ohne Winterruhe nicht überleben. </p>
+<p *ngIf="wantToKnow"> Dort verbringen sie bis
+    zu sieben Monaten in der Bärenhöhle in echtem Schlaf</p>
+<br>
+<br>
+<p>Die hie düe o viu Schlafe, vilech heimer ja Glück u mir gseh no eine ;)</p>
+<br>
+<p>Aber ize witer im Kontext...</p>
+<p>Es git hie ganz nach e Ort, wo nid nur Bäre düe schlafe. Fingsch dr Name use?</p>
+<br>
+<br>
+<mat-form-field>
+    <input matInput placeholder="Was denksch?" (input)="isCorrect($event)"
+           [ngClass]="isCorrectBoolean ? 'correct' : 'incorrect'"/>
+</mat-form-field>
+
+

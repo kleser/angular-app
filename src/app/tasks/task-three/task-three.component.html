@@ -1,0 +1,25 @@
+<h2>Supaaaa</h2>
+
+<p>Das isch ize nid e so schwirig gsi he ;)</p>
+<br>
+<p>Wemer scho hie si womer üs zum erschte richtige Date troffe hei (mit Znacht)
+    de hani fougendi Frage ah di:</p>
+
+<br>
+<p>Was simer denn fürne pace grennt?</p>
+<mat-form-field>
+    <input matInput placeholder="Pace" (input)="checkPace($event)"/>
+</mat-form-field>
+
+<p>Wi wiit isches gsi?</p>
+<mat-form-field>
+    <input matInput (input)="checkKm($event)" type="number"/>
+</mat-form-field>
+
+<p>Isch schön Wätter gsi?</p>
+<mat-slide-toggle [(ngModel)]="isChecked"></mat-slide-toggle>
+
+<br>
+
+<button mat-stroked-button (click)="control()">Kontroue</button>
+<h3 *ngIf="falseTry">Dues nomau kontrolliere schatzi</h3>

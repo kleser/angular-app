@@ -1,0 +1,16 @@
+.background {
+    display: flex;
+    flex-direction: row;
+}
+
+.child {
+    width: 80%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+img {
+    margin-left: 150px;
+}

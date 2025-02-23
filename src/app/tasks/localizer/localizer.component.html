@@ -1,0 +1,8 @@
+<p>Gehe zu Ort XY</p>
+
+<button (click)="test()">Position validieren</button>
+<button (click)="checkLocation()">Ordiginal validation</button>
+
+<p *ngIf="displayError">Dein Standort stimmt noch nicht ganz...</p>
+
+<h1>{{location}}</h1>

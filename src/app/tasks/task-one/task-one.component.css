@@ -1,0 +1,27 @@
+.correct {
+    border: 2px solid green;
+}
+
+.incorrect {
+    border: 2px solid red;
+}
+
+button {
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.flexi {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    margin-left: 60px;
+}
+
+.myFlex {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Zwei Spalten mit gleicher Breite */
+    gap: 10px; /* Abstand zwischen den Elementen */
+}
